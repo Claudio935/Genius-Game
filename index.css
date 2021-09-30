@@ -1,0 +1,98 @@
+header{
+   
+    text-align: center;
+    font-size: 22px;
+}
+
+
+
+body{
+    margin: 0;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 50px;
+}
+.menu-genius{
+    display: grid;
+    grid-template-areas: "vermelho verde" "amarelo azul ";
+    border-radius: 100%;
+    background-color: black;
+    height: 500px;
+    width: 500px;
+    grid-gap: 10px;
+    z-index: 0;
+
+    border: 1px solid black;
+    
+    
+}
+.botao{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: red;
+    border: solid blue 5px;
+    color: #fff;
+
+}
+
+.nucleo{
+    background-color: black;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+    position:absolute;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.green{
+    grid-area: "verde";
+    background-color: green;
+    border-top-left-radius: 100%;
+    margin:20px 0 0 20px;
+
+    
+    
+}
+.red{
+    grid-area: "vermelho";
+    background-color: red;
+    border-top-right-radius: 100%;
+    margin:20px 20px 0 0;
+    
+}
+.yellow{
+grid-area:"amarelo";
+background-color: yellow;
+border-bottom-right-radius: 100%;
+margin:0 20px 20px 0;
+}
+.blue{
+    grid-area: "azul";
+    background-color: blue;
+   border-bottom-left-radius: 100%;
+   margin:0  0px 20px 20px;
+}
+
+.select{
+    opacity: 0.5;
+    
+}
+.yellow:active{
+    opacity: 0.5;
+}
+.red:active{
+    opacity: 0.5;
+}
+.blue:active{
+    opacity: 0.5;
+}
+.green:active{
+    opacity: 0.5;
+}
